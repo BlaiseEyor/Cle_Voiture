@@ -1,0 +1,85 @@
+/* Base de la carte avec animation de remplissage */
+.card-service {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  height: 100%;
+}
+
+/* Titre et description avec z-index pour rester au-dessus de l'animation */
+.card-title-service, .desc-service {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+.card-title-service {
+  color: #166534;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.desc-service {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #374151;
+  flex-grow: 1;
+}
+
+/* L'élément d'animation (le cercle qui s'agrandit) */
+.card-service:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  right: -20px;
+  background: #16a34a; /* Green-600 */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 0.6s ease-out;
+}
+
+.card-service:hover:before {
+  transform: scale(55); /* Scale élevé pour les longs textes */
+}
+
+/* Changement de couleur au survol */
+.card-service:hover .card-title-service { color: #ffffff; }
+.card-service:hover .desc-service { color: rgba(255, 255, 255, 0.9); }
+
+/* Le coin avec la flèche */
+.go-corner-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border-radius: 0 0 0 32px;
+  z-index: 3;
+}
+
+.go-arrow-service {
+  color: white;
+  font-weight: bold;
+}
+
+/* css pour la section services d'assuranes  */
