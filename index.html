@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -20,10 +20,10 @@
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
             <a href="#top" class="text-xl text-green-600 font-extrabold tracking-tight">Clé Voiture 33</a>
             <div class="hidden items-center gap-6 md:flex">
-                <a href="#services" class="text-sm font-medium text-gray-700 hover:text-blue-700">Services</a>
-                <a href="#comment" class="text-sm font-medium text-gray-700 hover:text-blue-700">Comment ca marche</a>
-                <a href="#avis" class="text-sm font-medium text-gray-700 hover:text-blue-700">Avis</a>
-                <a href="#zone" class="text-sm font-medium text-gray-700 hover:text-blue-700">Zone</a>
+                <a href="#urgences" class="text-sm font-medium text-gray-700 hover:text-green-600">Urgences</a>
+                <a href="#services" class="text-sm font-medium text-gray-700 hover:text-green-600">Services</a>
+                <a href="#zones" class="text-sm font-medium text-gray-700 hover:text-green-600">Zone</a>
+                <a href="contact.html" class="text-sm font-medium text-gray-700 hover:text-green-600">Contact</a>
                 <a href="tel:+33651115909" class="text-md pointer-events-none font-medium text-gray-700 hover:text-blue-700">+33651115909</a>
                 <a href="tel:+33651115909"
                     class="mt-1 block flex items-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm font-semibold text-white">
@@ -63,7 +63,7 @@
         </div>
     </header>
     <main>
-        <section class="relative overflow-hidden">
+        <section id="accueil" class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10 bg-green-600">
                 <!-- <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1800&q=80"
                         alt="Voiture" class="h-full w-full object-cover">
@@ -71,8 +71,7 @@
             </div>
             <div class="mx-auto max-w-7xl px-4 py-14 grid lg:grid-cols-2 gap-12 items-center text-white lg:px-8 lg:py-24">
                 <div>
-                    <p
-                        class="mb-3 inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider">
+                    <p class="mb-3 inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider">
                         <span class="mr-2 flex h-2 w-2 rounded-full bg-white animate-pulse"></span>
                         Intervention rapide 7j/7
                     </p>
@@ -137,7 +136,7 @@
         </a>
     
         <!-- section services urgence -->
-        <section class="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+        <section id="urgences" class="mx-auto max-w-7xl px-4 py-16 lg:px-8 scroll-mt-24">
             <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
                 <div>
                     <span
@@ -166,12 +165,10 @@
                     </div>
         
                     <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                        <div
-                            class="flex items-center gap-3 rounded-xl border border-green-600/20 bg-white p-4 shadow-sm transition-all hover:border-green-600">
-                            <div
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-green-50 text-green-600">
+                        <div class="flex items-center gap-3 rounded-xl border border-green-600/20 bg-white p-4 h-12 shadow-sm transition-all hover:border-green-600">
+                            <div class="flex h-7 w-6 shrink-0 items-center justify-center rounded-lg bg-green-50 text-green-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" class="h-6 w-6">
+                                    stroke="currentColor" class="h-4 w-4">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                                 </svg>
@@ -181,12 +178,11 @@
                             </span>
                         </div>
         
-                        <div
-                            class="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-green-600/30">
+                        <div class="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 h-12 transition-all hover:border-green-600/30">
                             <div
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white text-green-600 shadow-sm">
+                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-white text-green-600 shadow-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" class="h-6 w-6">
+                                    stroke="currentColor" class="h-4 w-4">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -198,7 +194,7 @@
                     </div>
         
                     <a href="tel:+33651115909"
-                        class="group mt-10 inline-flex w-full items-center justify-center gap-3 rounded-lg border border-green-600 bg-white px-8 py-4 text-lg font-bold uppercase tracking-widest transition-all hover:bg-green-600 sm:w-auto">
+                        class="group mt-10 inline-flex w-full items-center justify-center gap-3 rounded-lg border border-green-600 bg-white px-8 py-2 text-lg font-bold uppercase tracking-widest transition-all hover:bg-green-600 sm:w-auto">
                         <svg class="h-5 w-5 text-green-600 transition-colors group-hover:text-white" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path
@@ -212,7 +208,7 @@
         
                 <div class="relative flex items-center justify-center overflow-hidden rounded-2xl p-[3px]">
                     <div
-                        class="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#16a34a_0%,#dcfce7_50%,#16a34a_100%)] opacity-80">
+                        class="absolute bg-[conic-gradient(from_90deg_at_50%_50%,#16a34a_0%,#dcfce7_50%,#16a34a_100%)] opacity-80">
                     </div>
         
                     <div class="relative h-full w-full rounded-2xl bg-white overflow-hidden">
@@ -226,7 +222,7 @@
                 </div>
             </div>
         </section>
-        <section class="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+        <section id="services" class="mx-auto max-w-7xl px-4 py-16 lg:px-8 scroll-mt-24">
             <div class="mb-16 max-w-3xl">
                 <h2
                     class="text-3xl font-extrabold leading-tight sm:text-4xl first-line:uppercase first-line:tracking-widest first-letter:float-start first-letter:me-3 first-letter:text-7xl first-letter:font-bold first-letter:text-green-600">
@@ -414,12 +410,10 @@
             </div>
         </section>
         <!-- section zone d'interventions -->
-        <section class="mx-auto max-w-7xl px-4 py-20 bg-green-100 p-4">
+        <section id="zones" class="mx-auto max-w-7xl px-4 py-20 p-4 scroll-mt-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
                 <div>
-                    <h2
-                        class="text-3xl font-extrabold leading-tight sm:text-4xl first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:text-green-600 first-letter:me-3 first-letter:float-start">
+                    <h2 class="text-3xl font-extrabold leading-tight sm:text-4xl first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:text-green-600 first-letter:me-3 first-letter:float-start">
                         Intervention à Bordeaux <br>& en Gironde
                     </h2>
                     <p class="mt-6 text-gray-600 text-lg">
@@ -720,6 +714,93 @@
                 </div>
             </div>
         </section>
+        <!-- section questions fréquentes -->
+        <section class="bg-gray-50 py-20">
+            <div class="mb-16 mx-auto max-w-7xl px-4">
+                <h2
+                    class="text-3xl font-extrabold leading-tight sm:text-4xl first-line:uppercase first-line:tracking-widest first-letter:float-start first-letter:me-3 first-letter:text-7xl first-letter:font-bold first-letter:text-green-600">
+                    Questions fréquentes ?
+                </h2>
+                <p class="mt-4 text-gray-600">
+                    Retrouvez les réponses aux questions les plus courantes concernant nos services
+                    de serrurerie automobile à Bordeaux et en Gironde.
+                </p>
+            </div>
+            <div class="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-green-100 blur-2xl rounded-3xl"></div>
+                    <img src="images/questions/question1.jpg" alt="Questions fréquentes serrurerie automobile"
+                        class="relative w-full h-[450px] object-contain rounded-2xl">
+                </div>
+                <div>
+                    <div class="space-y-4">
+                        <div class="border rounded-xl bg-white">
+                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                                Que faire en cas de clé de voiture perdue ?
+                                <span class="text-green-600 text-xl">+</span>
+                            </button>
+                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
+                                Si vous avez perdu votre clé de voiture, contactez rapidement un serrurier automobile.
+                                Une nouvelle clé peut être recréée sur place pour éviter toute immobilisation.
+                            </div>
+                        </div>
+                        <div class="border rounded-xl bg-white">
+                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                                Peut-on réparer une clé cassée ?
+                                <span class="text-green-600 text-xl">+</span>
+                            </button>
+                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
+                                Oui, dans de nombreux cas une clé peut être réparée. Sinon, une nouvelle clé est fabriquée
+                                rapidement.
+                            </div>
+                        </div>
+                        <div class="border rounded-xl bg-white">
+                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                                Comment ouvrir une voiture sans clé ?
+                                <span class="text-green-600 text-xl">+</span>
+                            </button>
+                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
+                                Un professionnel utilise des techniques sans casse pour ouvrir votre véhicule en toute sécurité.
+                            </div>
+                        </div>
+                        <div class="border rounded-xl bg-white">
+                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                                Combien de temps dure une intervention ?
+                                <span class="text-green-600 text-xl">+</span>
+                            </button>
+                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
+                                Les interventions sont généralement rapides et réalisées directement sur place.
+                            </div>
+                        </div>
+                        <div class="border rounded-xl bg-white">
+                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                                Intervenez-vous en Gironde ?
+                                <span class="text-green-600 text-xl">+</span>
+                            </button>
+                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
+                                Oui, nous intervenons à Bordeaux et dans toute la Gironde.
+                            </div>
+                        </div>
+                        <div class="border rounded-xl bg-white">
+                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                                Combien coûte une intervention ?
+                                <span class="text-green-600 text-xl">+</span>
+                            </button>
+                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
+                                Le prix dépend de la prestation. Un devis est toujours communiqué avant intervention.
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="mt-8">
+                        <a href="tel:0616454186"
+                            class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                            Appeler maintenant
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- section pied de naviagtion -->
@@ -727,7 +808,7 @@
         <div class="fixed z-50 w-[95%] h-16 max-w-lg -translate-x-1/2 bg-white/80 backdrop-blur-md border border-gray-200 rounded-full bottom-6 left-1/2 shadow-lg">
             <div class="grid h-full grid-cols-5 mx-auto">
     
-                <a href="#"
+                <a href="#accueil"
                     class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 group transition-colors">
                     <svg class="w-6 h-6 text-gray-500 group-hover:text-green-600" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
@@ -752,20 +833,21 @@
                 <div class="flex items-center justify-center">
                     <a href="tel:+33651115909"
                         class="flex items-center justify-center text-white bg-green-600 hover:bg-green-700 shadow-green-200 shadow-lg rounded-full w-12 h-12 transition-transform hover:scale-110 active:scale-95">
-                        <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.7963 20.499 20.7963C21 19.438V16.6207C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C15.8683 13.7237 15.3549 13.9058 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C10.2763 8.1317 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.55442 3.3441 8.15802 3.06645 7.37932 3H4.56201C3.08968 3.69907 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" />
+                        <svg class="h-4 w-4 transition-colors group-hover:text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" />
                         </svg>
                     </a>
                 </div>
     
-                <a href="#avis"
+                <a href="#services"
                     class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 group transition-colors">
                     <svg class="w-6 h-6 text-gray-500 group-hover:text-green-600" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span class="text-[10px] font-medium text-gray-500 group-hover:text-green-600 uppercase">Avis</span>
+                    <span class="text-[10px] font-medium text-gray-500 group-hover:text-green-600 uppercase">Services</span>
                 </a>
     
                 <a href="#contact"
@@ -781,42 +863,85 @@
         </div>
     </section>
     <!-- section pied de page -->
-     <footer class="bg-gray-900 text-gray-300 py-12 pb-24"> <div class="mx-auto max-w-7xl px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
-        
-        <div>
-            <h3 class="text-white text-xl font-bold mb-4">Expert Serrurier Auto</h3>
-            <p class="text-sm leading-relaxed">
-                Spécialiste du dépannage de clés de voiture en Gironde. Intervention rapide 7j/7 pour ouverture de porte, perte de clés et programmation.
-            </p>
-            <div class="mt-6 flex gap-4">
+    <section>
+        <footer class="bg-gray-900 text-gray-300 py-12 pb-24">
+            <div class="mx-auto max-w-7xl px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-green-600 text-xl font-bold mb-4">Clé Voiture 33</h3>
+                    <p class="text-sm leading-relaxed text-gray-300">
+                        Serrurerie automobile de confiance à Bordeaux et sur
+                        toute la Gironde.
+                        Spécialisés dans le dépannage d'urgence, nous intervenons 7j/7 pour la perte de
+                        clés, l'ouverture de portières bloquées et la programmation de télécommandes toutes marques.
+                    </p>
+                    <div class="mt-6 flex gap-4">
+                    </div>
                 </div>
-        </div>
-
-        <div>
-            <h3 class="text-white text-xl font-bold mb-4">Services</h3>
-            <ul class="space-y-2 text-sm">
-                <li><a href="#" class="hover:text-green-500 transition">Ouverture de porte</a></li>
-                <li><a href="#" class="hover:text-green-500 transition">Double de clés</a></li>
-                <li><a href="#" class="hover:text-green-500 transition">Perte totale de clés</a></li>
-                <li><a href="#" class="hover:text-green-500 transition">Réparation de télécommandes</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-            <p class="text-sm">📍 Bordeaux et toute la Gironde (33)</p>
-            <p class="text-sm mt-2">📞 06 51 11 59 09</p>
-            <p class="text-sm mt-2">🕒 Disponible 7j/7 - 24h/24</p>
-        </div>
-
-    </div>
-
-    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-xs">
-        <p>&copy; 2026 Eyordev - Tous droits réservés. <a href="#" class="underline">Mentions légales</a></p>
-    </div>
-</footer>
+    
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#accueil" class="hover:text-green-500 transition">Accueil</a></li>
+                        <li><a href="#urgences" class="hover:text-green-500 transition">Urgences</a></li>
+                        <li><a href="#services" class="hover:text-green-500 transition">Services</a></li>
+                        <li><a href="#zones" class="hover:text-green-500 transition">Zones d'interventions</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-6 italic tracking-wider">Contacts</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 group">
+                            <div class="flex-shrink-0 mt-1">
+                                <svg class="w-5 h-5 text-green-500 transition-transform group-hover:scale-110" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <p class="text-sm text-gray-300">
+                                Bordeaux et toute la Gironde(33)
+                            </p>
+                        </div>
+                
+                        <a href="tel:+33651115909" class="flex items-center gap-3 group">
+                            <div class="flex-shrink-0">
+                                <svg class="h-4 w-4 transition-colors group-hover:text-green-600" viewBox="0 0 24 24" fill="none" stroke="#16a34a"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" />
+                                </svg>
+                            </div>
+                            <p class="text-sm text-gray-300 group-hover:text-green-400 transition-colors">
+                                +33 6 51 11 59 09
+                            </p>
+                        </a>
+                
+                        <div class="flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <p class="text-sm text-gray-300">Disponible <span class="text-green-400 font-bold">7j/7 - 24h/24</span></p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-xs">
+                <p>&copy; 2026 Clé Voiture 33 - Tous droits réservés.</p>
+            </div>
+        </footer>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+    <script src="static/js/defilement.js"></script>
+    <script src="static/js/questions_frequentes.js"></script>
 </body>
 
 </html>
