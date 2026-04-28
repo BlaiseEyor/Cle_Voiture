@@ -334,7 +334,7 @@
                 </p>
             </div>
         
-            <div class="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-4 justify-items-center">
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
                 <div class="card-rassurance">
                     <div class="blob"></div>
                     <div class="bg-glass">
@@ -432,8 +432,18 @@
                         </div>
                         <div>
                             <p class="text-sm text-green-800 font-medium uppercase tracking-wider">Temps moyen</p>
-                            <p class="text-2xl font-black text-green-900">30 MINUTES</p>
+                            <p class="text-2xl font-bold text-green-900">30 MINUTES</p>
                         </div>
+                        <a href="#services"
+                            class="inline-flex items-center gap-4 rounded-xl bg-green-50 p-1 pr-6 transition-all hover:bg-green-100 group">
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm font-bold text-green-900 uppercase tracking-wide">En savoir plus</span>
+                                <svg class="w-4 h-4 text-green-600 group-hover:translate-x-1 transition-transform" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
         
@@ -581,7 +591,7 @@
                             <span class="text-sm font-semibold text-gray-700 group-hover:text-green-800">Floirac</span>
                         </a>
         
-                        <a href="#contact"
+                        <!-- <a href="#contact"
                             class="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-3.5 shadow-sm transition-all duration-300 hover:border-green-500 hover:bg-green-50 hover:shadow-md active:scale-95">
                             <svg class="h-5 w-5 text-gray-400 transition-colors group-hover:text-green-600" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2">
@@ -657,7 +667,7 @@
                                 <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <span class="text-sm font-semibold text-gray-700 group-hover:text-green-800">Gujan-Mestras</span>
-                        </a>
+                        </a> -->
         
                     </div>
         
@@ -715,89 +725,114 @@
             </div>
         </section>
         <!-- section questions fréquentes -->
-        <section class="bg-gray-50 py-20">
-            <div class="mb-16 mx-auto max-w-7xl px-4">
-                <h2
-                    class="text-3xl font-extrabold leading-tight sm:text-4xl first-line:uppercase first-line:tracking-widest first-letter:float-start first-letter:me-3 first-letter:text-7xl first-letter:font-bold first-letter:text-green-600">
-                    Questions fréquentes ?
-                </h2>
-                <p class="mt-4 text-gray-600">
-                    Retrouvez les réponses aux questions les plus courantes concernant nos services
-                    de serrurerie automobile à Bordeaux et en Gironde.
-                </p>
-            </div>
-            <div class="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-green-100 blur-2xl rounded-3xl"></div>
-                    <img src="images/questions/question1.jpg" alt="Questions fréquentes serrurerie automobile"
-                        class="relative w-full h-[450px] object-contain rounded-2xl">
+        <section class="bg-gray-50 py-20 scroll-mt-20" id="faq">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="mb-16">
+                    <h2
+                        class="text-3xl font-extrabold leading-tight sm:text-4xl first-line:uppercase first-line:tracking-widest first-letter:float-start first-letter:me-3 first-letter:text-7xl first-letter:font-bold first-letter:text-green-600">
+                        Questions fréquentes ?
+                    </h2>
+                    <p class="mt-4 text-gray-600">
+                        Retrouvez les réponses aux questions les plus courantes concernant nos services
+                        de serrurerie automobile à Bordeaux et en Gironde.
+                    </p>
                 </div>
-                <div>
-                    <div class="space-y-4">
-                        <div class="border rounded-xl bg-white">
-                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
-                                Que faire en cas de clé de voiture perdue ?
-                                <span class="text-green-600 text-xl">+</span>
-                            </button>
-                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
-                                Si vous avez perdu votre clé de voiture, contactez rapidement un serrurier automobile.
-                                Une nouvelle clé peut être recréée sur place pour éviter toute immobilisation.
-                            </div>
-                        </div>
-                        <div class="border rounded-xl bg-white">
-                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
-                                Peut-on réparer une clé cassée ?
-                                <span class="text-green-600 text-xl">+</span>
-                            </button>
-                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
-                                Oui, dans de nombreux cas une clé peut être réparée. Sinon, une nouvelle clé est fabriquée
-                                rapidement.
-                            </div>
-                        </div>
-                        <div class="border rounded-xl bg-white">
-                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
-                                Comment ouvrir une voiture sans clé ?
-                                <span class="text-green-600 text-xl">+</span>
-                            </button>
-                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
-                                Un professionnel utilise des techniques sans casse pour ouvrir votre véhicule en toute sécurité.
-                            </div>
-                        </div>
-                        <div class="border rounded-xl bg-white">
-                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
-                                Combien de temps dure une intervention ?
-                                <span class="text-green-600 text-xl">+</span>
-                            </button>
-                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
-                                Les interventions sont généralement rapides et réalisées directement sur place.
-                            </div>
-                        </div>
-                        <div class="border rounded-xl bg-white">
-                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
-                                Intervenez-vous en Gironde ?
-                                <span class="text-green-600 text-xl">+</span>
-                            </button>
-                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
-                                Oui, nous intervenons à Bordeaux et dans toute la Gironde.
-                            </div>
-                        </div>
-                        <div class="border rounded-xl bg-white">
-                            <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
-                                Combien coûte une intervention ?
-                                <span class="text-green-600 text-xl">+</span>
-                            </button>
-                            <div class="faq-content hidden px-5 pb-5 text-gray-600">
-                                Le prix dépend de la prestation. Un devis est toujours communiqué avant intervention.
-                            </div>
-                        </div>
         
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Que faire en cas de clé de voiture perdue ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            Si vous avez perdu votre clé de voiture à Bordeaux ou en Gironde, il est important d’agir rapidement. Un serrurier
+                            automobile peut intervenir pour recréer une nouvelle clé adaptée à votre véhicule, directement sur place. Cela vous
+                            évite de rester bloqué longtemps. En cas d’urgence, la solution la plus rapide reste de contacter un professionnel
+                            capable d’intervenir immédiatement.
+                        </div>
                     </div>
-                    <div class="mt-8">
-                        <a href="tel:0616454186"
-                            class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition">
-                            Appeler maintenant
-                        </a>
+        
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Peut-on réparer une clé de voiture cassée ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            Oui, dans de nombreux cas, une clé cassée peut être réparée. Si la réparation n’est pas possible, une nouvelle clé peut
+                            être fabriquée rapidement. Un serrurier automobile évalue la situation sur place et propose la solution la plus adaptée
+                            pour vous permettre de réutiliser votre véhicule sans délai.
+                        </div>
                     </div>
+        
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Comment ouvrir une voiture sans clé ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            Un serrurier automobile utilise des techniques professionnelles pour ouvrir un véhicule sans endommager la serrure ou la
+                            carrosserie. Ces méthodes permettent une ouverture rapide et sécurisée, sans risque pour votre voiture. Il est fortement
+                            déconseillé de tenter d’ouvrir soi-même son véhicule, car cela peut causer des dégâts importants.
+                        </div>
+                    </div>
+        
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Combien de temps dure une intervention ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            La durée dépend du problème, mais la plupart des interventions sont rapides. En général, un serrurier automobile peut
+                            intervenir en peu de temps et résoudre la situation immédiatement sur place, afin de vous permettre de repartir
+                            rapidement.
+                        </div>
+                    </div>
+        
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Intervenez-vous partout en Gironde ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            Oui, nous intervenons à Bordeaux et dans toute la Gironde, ainsi que dans les villes alentours. Notre objectif est de
+                            vous dépanner rapidement, où que vous soyez dans la zone.
+                        </div>
+                    </div>
+        
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Faut-il prendre rendez-vous ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            Non, en cas d’urgence, vous pouvez appeler directement. Les interventions sont rapides et organisées pour répondre
+                            immédiatement aux situations urgentes comme une clé perdue, cassée ou une voiture verrouillée.
+                        </div>
+                    </div>
+        
+                    <div class="border rounded-xl bg-white shadow-sm self-start">
+                        <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                            Combien coûte une intervention ?
+                            <span class="text-green-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-50 pt-4">
+                            Le prix dépend du type d’intervention (clé perdue, ouverture, réparation, etc.). Un devis peut être communiqué
+                            rapidement avant intervention afin d’éviter toute surprise. L’objectif est de proposer un service transparent et adapté
+                            à votre situation.
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="mt-12 text-center">
+                    <a href="tel:+33651115909"
+                        class="inline-flex items-center gap-3 bg-green-600 text-white px-10 py-4 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-green-200">
+                        <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        Appeler maintenant
+                    </a>
                 </div>
             </div>
         </section>
