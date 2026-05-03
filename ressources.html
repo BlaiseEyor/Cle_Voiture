@@ -2,6 +2,13 @@
 <html lang="fr" class="scroll-smooth">
 
 <head>
+    <!-- Preconnect CDN for faster loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -69,7 +76,7 @@
         <section id="accueil" class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10 bg-green-600">
                 <!-- <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1800&q=80"
-                        alt="Voiture" class="h-full w-full object-cover">
+                        alt="Voiture" class="h-full w-full object-cover" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/55 to-black/30"></div> -->
             </div>
             <div class="mx-auto max-w-7xl px-4 py-14 grid lg:grid-cols-2 gap-12 items-center text-white lg:px-8 lg:py-24">
@@ -125,8 +132,8 @@
                     </div> -->
                 </div>
                 <div class="flex">
-                    <img src="images/caroussel/caroussel2.png" alt="Illustration serrurier automobile"
-                        class="h-[480px] w-full rounded-2xl border border-white/20 object-cover shadow-2xl">
+                    <img src="images/caroussel/caroussel2.webp" alt="Illustration serrurier automobile"
+                        class="h-[480px] w-full rounded-2xl border border-white/20 object-cover shadow-2xl" loading="lazy">
                 </div>
             </div>
         </section>
@@ -214,8 +221,8 @@
                     </div>
         
                     <div class="relative h-full w-full rounded-2xl bg-white overflow-hidden">
-                        <img src="images/appel/appel3.png" alt="Dépannage automobile urgent"
-                            class="h-[450px] w-full rounded-[13px] object-cover transition-transform duration-700">
+                        <img src="images/appel/appel3.webp" alt="Dépannage automobile urgent"
+                            class="h-[450px] w-full rounded-[13px] object-cover transition-transform duration-700" loading="lazy">
         
                         <div
                             class="absolute inset-0 rounded-[13px]  pointer-events-none">
@@ -692,8 +699,8 @@
                 <div class="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         
                     <div class="order-2 lg:order-1 p-8 lg:p-16 flex justify-center">
-                        <img src="images/urgences/urgence3.png" alt="Serrurier automobile Bordeaux"
-                            class="w-full max-w-md h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105">
+                        <img src="images/urgences/urgence3.webp" alt="Serrurier automobile Bordeaux"
+                            class="w-full max-w-md h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105" loading="lazy">
                     </div>
         
                     <div class="order-1 lg:order-2 p-8 lg:pr-16 lg:py-16 text-center lg:text-left">
@@ -965,10 +972,10 @@
         </footer>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js" defer></script>
     <script src="static/js/defilement.js"></script>
     <script src="static/js/questions_frequentes.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="static/js/aos.js"></script>
 </body>
 
