@@ -1,3 +1,4 @@
+/* NE PAS TOUCHER : effet des cartes "Nos services" */
 /* Base de la carte avec animation de remplissage */
 .card-service {
   display: flex;
@@ -101,6 +102,24 @@
 
 .card-rassurance:hover {
   transform: translateY(-5px);
+}
+
+.zone-card {
+  transition: background-color .25s ease, border-color .25s ease, transform .2s ease, box-shadow .25s ease;
+}
+
+.zone-card:hover {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(22, 163, 74, 0.08);
+}
+
+.zone-card:hover svg,
+.zone-card:hover .text-gray-700,
+.zone-card:hover .text-gray-500,
+.zone-card:hover .text-gray-400 {
+  color: #16a34a;
 }
 
 .card-rassurance .bg-glass {
