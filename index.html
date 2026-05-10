@@ -74,71 +74,51 @@
             </div>
         </div>
     </header>
-    <main>
-        <section id="accueil" class="relative overflow-hidden">
-            <div class="absolute inset-0 -z-10 bg-white">
-                <!-- <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1800&q=80"
-                        alt="Voiture" class="h-full w-full object-cover" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/55 to-black/30"></div> -->
-            </div>
-            <div class="mx-auto max-w-7xl px-4 py-12 grid lg:grid-cols-2 gap-12 items-center text-white lg:px-8 lg:py-14">
-                <div>
-                    <p data-aos="zoom-in-right" class="mb-3 inline-flex items-center text-gray-900 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider">
+    <main class="overflow-x-hidden">
+        <section id="acceuil">
+            <div class="px-4 pt-12 pb-20 sticky mx-auto max-w-7xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div class="absolute -top-10 -left-10 w-64 h-64 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+                <div class="flex flex-col justify-center">
+                    <p data-aos="zoom-in-right" class="mb-3 inline-flex items-center gap-2 rounded-full bg-green-600 px-3 py-1 text-xs animate-pulse font-semibold text-white w-fit">
                         <span class="mr-2 flex h-2 w-2 rounded-full bg-white animate-pulse">
-                            
                         </span>
                         Intervention rapide 7j/7
                     </p>
-                    <h1 data-aos="zoom-in-right" class="max-w-3xl text-gray-900 text-4xl font-black leading-tight uppercase sm:text-5xl lg:text-6xl">
-                        Serrurrier automobile à Bordeaux
-                        <br>et en Gironde.
+                    <h1 data-aos="zoom-in-right" class="mb-6 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl leading-tight">
+                        Serrurrier automobile, <br>
+                        <span class="text-green-600">à Bordeaux et en Gironde.</span>
                     </h1>
-                    <p data-aos="zoom-in-right" class="mt-6 max-w-2xl text-lg text-gray-900">
-                        Clé perdue, cassée ou voiture verrouillée ?
-                        Intervention rapide en Gironde, sans dommage.
+                    <p data-aos="zoom-in-right" class="mb-6 text-gray-600 text-lg">
+                        Clé <span class="text-4xl font-extrabold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">Voiture 33</span>,
+                        perdue, cassée ou voiture verrouillée ? Intervention rapide en Gironde, sans dommage.
                     </p>
-                    <div class="mt-8 flex flex-wrap gap-3">
-                        <a href="tel:0616454186" data-aos="zoom-in-right"
-                            class="group inline-flex items-center gap-2 rounded-lg border border-white/60 bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all hover:bg-green-600">
-                            <svg class="h-4 w-4 text-green-600 transition-colors group-hover:text-white" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- boutons -->
+                    <div class="flex flex-wrap gap-4">
+                        <a data-aos="zoom-in-right" href="#menu" class="flex items-center gap-2 rounded-full bg-orange-600 px-5 py-3 text-sm font-semibold text-white hover:bg-orange-600 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                <path d="M7 2v20"></path>
+                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
                             </svg>
-                            <span class="text-green-600 transition-colors group-hover:text-white">
-                                Appeler maintenant
-                            </span>
+                            Appeler maintenant
                         </a>
-                        <a href="#services" data-aos="zoom-in-right"
-                            class="inline-flex items-center gap-2 rounded-lg border border-white/60 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-all hover:bg-white/10">
-                            Voir nos services
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                                stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        <a data-aos="zoom-in" href="https://wa.me/0169612436" class="flex items-center gap-2 rounded-full bg-white text-orange-600 border border-orange-600 hover:bg-[#e6764a] opacity-80 hover:text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 px-5 py-2.5 text-sm font-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                             </svg>
+                            <span>Voir nos services</span>
                         </a>
                     </div>
-                    <!-- <div class="mt-10 grid max-w-3xl gap-4 text-sm sm:grid-cols-3">
-                        <div class="rounded-lg bg-white/10 p-4 backdrop-blur">
-                            <p class="font-semibold">Intervention à domicile</p>
-                            <p class="text-gray-200">Bordeaux 50km</p>
-                        </div>
-                        <div class="rounded-lg bg-white/10 p-4 backdrop-blur">
-                            <p class="font-semibold">Sans dommage</p>
-                            <p class="text-gray-200">Respect de la carrosserie</p>
-                        </div>
-                        <div class="rounded-lg bg-white/10 p-4 backdrop-blur">
-                            <p class="font-semibold">Paiement simple</p>
-                            <p class="text-gray-200">Carte bancaire ou virement</p>
-                        </div>
-                    </div> -->
                 </div>
-                <div data-aos="zoom-in-left" class="flex">
-                    <!-- images/caroussel/caroussel2.webp -->
-                    <img src="images/blog/blog3.webp" alt="Illustration serrurier automobile"
-                        class="h-[480px] w-full rounded-2xl border border-white/20 object-cover shadow-2xl" width="800" height="480" fetchpriority="high">
+                <!-- IMAGE -->
+                <div class="relative group">
+                    <!-- <div class="absolute -top-10 -left-10 w-64 h-64 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div> -->
+                    <!-- Image principale (Caroussel) -->
+                    <div data-aos="zoom-in-left" class="overflow-hidden rounded-2xl border border-white">
+                        <img src="images/caroussel/caroussel2.webp" alt="Plats Vitalis" class="object-cover w-full h-[400px] md:h-[500px] transition-transform duration-500 group-hover:scale-105">
+                    </div>
                 </div>
             </div>
         </section>
